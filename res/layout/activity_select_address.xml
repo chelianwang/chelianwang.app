@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/search_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="center"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/search_back" />
+
+        <EditText
+            android:id="@+id/search_content"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/search_back"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/search2"
+            android:drawablePadding="5dp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/search_content"
+            android:background="@drawable/button_bg"
+            android:text="确定"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/show_search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#22000000"
+        android:dividerHeight="0.1dp" >
+    </ListView>
+
+</LinearLayout>
